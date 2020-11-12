@@ -1,1 +1,4 @@
-%h1 This is indexpage
+- @posts.each do |post|
+	%h1= link_to post.title, post
+
+= link_to "New", new_post_path
